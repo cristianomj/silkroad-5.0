@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - silkroad 5.0@localhost" uuid="1a4ae691-17e0-49e9-9f28-273b3d63e6cf">
+    <database-info product="MySQL" version="5.6.27-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="silkroad 5.0"/>
+    <table name="auction" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="AuctionID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="BidIncrement" sqlType="DECIMAL" precision="13" scale="2" nullable="true" jdbcType="3"/>
+      <column name="MinimuBid" sqlType="DECIMAL" precision="13" scale="2" nullable="true" jdbcType="3"/>
+      <column name="Copies_Sold" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Monitor" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ItemID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Reserve" sqlType="DECIMAL" precision="13" scale="2" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="AuctionID"/>
+      <foreign-key name="auction_ibfk_1" columns="Monitor" ref-table="employee" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="EmployeeID" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="auction_ibfk_2" columns="ItemID" ref-table="item" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="ItemID" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="bid_ibfk_3" table="bid" schema="" catalog="silkroad 5.0" columns="AuctionID"/>
+      <exported-key name="post_ibfk_2" table="post" schema="" catalog="silkroad 5.0" columns="AuctionID"/>
+    </table>
+    <table name="bid" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="CustomerID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="AuctionID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ItemID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="BidTime" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="BidPrice" sqlType="DECIMAL" precision="13" scale="2" nullable="true" jdbcType="3"/>
+      <primary-key name="PRIMARY" columns="CustomerID,ItemID,BidTime"/>
+      <foreign-key name="bid_ibfk_1" columns="ItemID" ref-table="item" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="ItemID" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="bid_ibfk_2" columns="CustomerID" ref-table="customer" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="CustomerID" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="bid_ibfk_3" columns="AuctionID" ref-table="auction" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="AuctionID" update-rule="0" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="course" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="DeptId" sqlType="CHAR" precision="30" scale="0" nullable="true" jdbcType="1"/>
+      <column name="CrsCode" sqlType="CHAR" precision="10" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CrsName" sqlType="CHAR" precision="50" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Descr" sqlType="CHAR" precision="100" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="CrsCode"/>
+      <exported-key name="teaching_ibfk_2" table="teaching" schema="" catalog="silkroad 5.0" columns="CrsCode"/>
+      <exported-key name="transcript_ibfk_2" table="transcript" schema="" catalog="silkroad 5.0" columns="CrsCode"/>
+      <index name="DeptId" unique="true" columns="DeptId,CrsName"/>
+    </table>
+    <table name="customer" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="Rating" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4" def="MQ=="/>
+      <column name="CreditCardNum" sqlType="CHAR" precision="19" scale="0" nullable="true" jdbcType="1"/>
+      <column name="CustomerID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="CustomerID"/>
+      <foreign-key name="customer_ibfk_1" columns="CustomerID" ref-table="person" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="SSN" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="bid_ibfk_2" table="bid" schema="" catalog="silkroad 5.0" columns="CustomerID"/>
+      <exported-key name="post_ibfk_1" table="post" schema="" catalog="silkroad 5.0" columns="CustomerID"/>
+    </table>
+    <table name="employee" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="StartDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="HourlyRate" sqlType="DECIMAL UNSIGNED" precision="5" scale="2" nullable="true" jdbcType="3"/>
+      <column name="Level" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4" def="MA=="/>
+      <column name="EmployeeID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <primary-key name="PRIMARY" columns="EmployeeID"/>
+      <foreign-key name="employee_ibfk_1" columns="EmployeeID" ref-table="person" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="SSN" update-rule="0" delete-rule="3" deferrability="2"/>
+      <exported-key name="auction_ibfk_1" table="auction" schema="" catalog="silkroad 5.0" columns="Monitor"/>
+    </table>
+    <table name="item" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="ItemID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Name" sqlType="CHAR" precision="255" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Type" sqlType="ENUM" precision="13" scale="0" nullable="false" jdbcType="1"/>
+      <column name="NumCopies" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ItemID"/>
+      <exported-key name="auction_ibfk_2" table="auction" schema="" catalog="silkroad 5.0" columns="ItemID"/>
+      <exported-key name="bid_ibfk_1" table="bid" schema="" catalog="silkroad 5.0" columns="ItemID"/>
+    </table>
+    <table name="person" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="SSN" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="LastName" sqlType="CHAR" precision="20" scale="0" nullable="false" jdbcType="1"/>
+      <column name="FirstName" sqlType="CHAR" precision="20" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Address" sqlType="CHAR" precision="255" scale="0" nullable="true" jdbcType="1"/>
+      <column name="ZipCode" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Telephone" sqlType="CHAR" precision="13" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Email" sqlType="CHAR" precision="25" scale="0" nullable="true" jdbcType="1"/>
+      <column name="UserName" sqlType="CHAR" precision="20" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="SSN"/>
+      <exported-key name="customer_ibfk_1" table="customer" schema="" catalog="silkroad 5.0" columns="CustomerID"/>
+      <exported-key name="employee_ibfk_1" table="employee" schema="" catalog="silkroad 5.0" columns="EmployeeID"/>
+      <index name="UserName" unique="true" columns="UserName"/>
+    </table>
+    <table name="post" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="ExpireDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="PostDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="CustomerID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="AuctionID" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="CustomerID,AuctionID"/>
+      <foreign-key name="post_ibfk_1" columns="CustomerID" ref-table="customer" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="CustomerID" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="post_ibfk_2" columns="AuctionID" ref-table="auction" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="AuctionID" update-rule="0" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="professor" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Name" sqlType="CHAR" precision="30" scale="0" nullable="true" jdbcType="1"/>
+      <column name="DeptId" sqlType="CHAR" precision="30" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+      <exported-key name="teaching_ibfk_1" table="teaching" schema="" catalog="silkroad 5.0" columns="ProfId"/>
+    </table>
+    <table name="studanddept" schema="" catalog="silkroad 5.0" type="VIEW">
+      <column name="StudId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="DeptId" sqlType="CHAR" precision="30" scale="0" nullable="true" jdbcType="1"/>
+    </table>
+    <table name="student" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="Name" sqlType="CHAR" precision="30" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Address" sqlType="CHAR" precision="60" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Status" sqlType="CHAR" precision="10" scale="0" nullable="true" jdbcType="1" def="J2ZyZXNobWFuJw=="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+      <exported-key name="takes_ibfk_2" table="takes" schema="" catalog="silkroad 5.0" columns="StudentId"/>
+      <exported-key name="transcript_ibfk_1" table="transcript" schema="" catalog="silkroad 5.0" columns="StudId"/>
+    </table>
+    <table name="takes" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="StudentId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CrsCode" sqlType="CHAR" precision="3" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Semester" sqlType="CHAR" precision="6" scale="0" nullable="false" jdbcType="1"/>
+      <foreign-key name="takes_ibfk_1" columns="Semester,CrsCode" ref-table="class" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="Semester,CrsCode" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="takes_ibfk_2" columns="StudentId" ref-table="student" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="Semester" unique="false" columns="Semester,CrsCode"/>
+    </table>
+    <table name="teaching" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="ProfId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CrsCode" sqlType="CHAR" precision="10" scale="0" nullable="false" jdbcType="1"/>
+      <column name="Semester" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="CrsCode,Semester"/>
+      <foreign-key name="teaching_ibfk_1" columns="ProfId" ref-table="professor" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="Id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="teaching_ibfk_2" columns="CrsCode" ref-table="course" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="CrsCode" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="transcript_ibfk_3" table="transcript" schema="" catalog="silkroad 5.0" columns="CrsCode,Semester"/>
+    </table>
+    <table name="transcript" schema="" catalog="silkroad 5.0" type="TABLE">
+      <column name="StudId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA=="/>
+      <column name="CrsCode" sqlType="CHAR" precision="10" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="CrsName" sqlType="CHAR" precision="50" scale="0" nullable="true" jdbcType="1"/>
+      <column name="Semester" sqlType="CHAR" precision="50" scale="0" nullable="false" jdbcType="1" def="Jyc="/>
+      <column name="Grade" sqlType="CHAR" precision="1" scale="0" nullable="true" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="StudId,CrsCode,Semester"/>
+      <foreign-key name="transcript_ibfk_1" columns="StudId" ref-table="student" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="Id" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="transcript_ibfk_2" columns="CrsCode" ref-table="course" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="CrsCode" update-rule="0" delete-rule="3" deferrability="2"/>
+      <foreign-key name="transcript_ibfk_3" columns="CrsCode,Semester" ref-table="teaching" ref-schema="" ref-catalog="silkroad 5.0" ref-columns="CrsCode,Semester" update-rule="0" delete-rule="3" deferrability="2"/>
+      <index name="CrsCode" unique="false" columns="Semester"/>
+    </table>
+  </data-source>
+</component>

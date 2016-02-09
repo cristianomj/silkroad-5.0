@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Student Registration System -- Main</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function Button1_onclick() {
+if(document.myForm.username.value == "")
+    alert("UserName Can Not Be Null!")
+javascript:myForm.submit()
+}
+
+function Button2_onclick() {
+    window.open("RegisterPage.htm","_self");
+
+}
+
+// ]]>
+</script>
+</head>
+<body style="font-size: 12pt; text-align: center" bgcolor="#ffff00">
+    <span style="font-family: Arial"><strong><span style="font-size: 14pt">Student Registration
+        System</span><br />
+        <br />
+        <img src="MainPage.JPG" /><br />
+        <br />
+        
+        <form name="myForm" action="login.jsp" method="post">
+
+        <span style="font-size: 10pt">User ID :</span>
+        <input id="Text1" name="username" type="text" />
+        &nbsp; <span style="font-size: 10pt">Password:</span>
+        <input id="Password1" name="userpasswd" type="password" />
+        &nbsp;
+        <input id="Button1" style="width: 70px" type="button" value="Log In" onclick="return Button1_onclick()" />
+        &nbsp;
+        <input id="Button2" style="width: 70px" type="button" value="Register" onclick="return Button2_onclick()" /><br />
+        <br />
+        </form>
+        
+        <span style="font-size: 9pt">
+            <br />
+            Shang Yang, 10/19/2006, Demo Version<br />
+            Department of Computer Science, State University of New York at Stony Brook</span></strong></span><span
+                style="font-size: 9pt"> </span>
+
+</body>
+</html>

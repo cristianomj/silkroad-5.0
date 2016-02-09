@@ -1,0 +1,1 @@
+Use the website draw.io to view the diagram by opening the xml file on the website.

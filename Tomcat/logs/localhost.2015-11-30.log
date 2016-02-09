@@ -1,0 +1,324 @@
+30-Nov-2015 13:34:46.120 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 229 in the jsp file: /PostAuctionPage.jsp
+Syntax error, insert "}" to complete Block
+226: 							<option>
+227: 								<%= itemRes.getString("Name")%>
+228: 							</option>
+229: 							<% } catch (Exception e) {
+230: 								e.printStackTrace();
+231: 							} finally {
+232: 								try {
+
+
+An error occurred at line: [449] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\PostAuctionPage_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [450] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\PostAuctionPage_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 229 in the jsp file: /PostAuctionPage.jsp
+Syntax error, insert "}" to complete Block
+226: 							<option>
+227: 								<%= itemRes.getString("Name")%>
+228: 							</option>
+229: 							<% } catch (Exception e) {
+230: 								e.printStackTrace();
+231: 							} finally {
+232: 								try {
+
+
+An error occurred at line: [449] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\PostAuctionPage_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [450] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\PostAuctionPage_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+30-Nov-2015 14:26:18.531 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 210 in the jsp file: /getItems.jsp
+auctionID cannot be resolved to a variable
+207:               <% String winner = "";
+208:                  if (res.getString("Expired").equals("Y")) {
+209:                    cs = conn.prepareCall("call GetAuctionWinner(?)");
+210:                    cs.setInt(1, auctionID);
+211:                    cs.execute();
+212: 
+213:                    ResultSet winnerRes = cs.getResultSet();
+
+
+An error occurred at line: 286 in the jsp file: /getItems.jsp
+Syntax error, insert "}" to complete Block
+283:           </table>
+284:         </div> <!-- bidHistory -->
+285:             <% } // while(allAuctionsRes.next())
+286:           } catch (Exception e) {
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+
+
+An error occurred at line: [490] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [491] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 210 in the jsp file: /getItems.jsp
+auctionID cannot be resolved to a variable
+207:               <% String winner = "";
+208:                  if (res.getString("Expired").equals("Y")) {
+209:                    cs = conn.prepareCall("call GetAuctionWinner(?)");
+210:                    cs.setInt(1, auctionID);
+211:                    cs.execute();
+212: 
+213:                    ResultSet winnerRes = cs.getResultSet();
+
+
+An error occurred at line: 286 in the jsp file: /getItems.jsp
+Syntax error, insert "}" to complete Block
+283:           </table>
+284:         </div> <!-- bidHistory -->
+285:             <% } // while(allAuctionsRes.next())
+286:           } catch (Exception e) {
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+
+
+An error occurred at line: [490] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [491] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+30-Nov-2015 14:27:51.937 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 286 in the jsp file: /getItems.jsp
+Syntax error, insert "}" to complete Block
+283:           </table>
+284:         </div> <!-- bidHistory -->
+285:             <% } // while(allAuctionsRes.next())
+286:           } catch (Exception e) {
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+
+
+An error occurred at line: 290 in the jsp file: /getItems.jsp
+winnerRes cannot be resolved
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+290:                 winnerRes.close();
+291:                 bidHistoryRes.close();
+292:                 res.close();
+293:                 conn.close();
+
+
+An error occurred at line: [491] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [492] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 286 in the jsp file: /getItems.jsp
+Syntax error, insert "}" to complete Block
+283:           </table>
+284:         </div> <!-- bidHistory -->
+285:             <% } // while(allAuctionsRes.next())
+286:           } catch (Exception e) {
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+
+
+An error occurred at line: 290 in the jsp file: /getItems.jsp
+winnerRes cannot be resolved
+287:               e.printStackTrace();
+288:             } finally {
+289:               try {
+290:                 winnerRes.close();
+291:                 bidHistoryRes.close();
+292:                 res.close();
+293:                 conn.close();
+
+
+An error occurred at line: [491] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error on token "}", delete this token
+
+An error occurred at line: [492] in the generated java file: [D:\Files\Projects\SilkRoad-5.0\Tomcat\work\Catalina\localhost\SilkRoad\org\apache\jsp\getItems_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+30-Nov-2015 14:29:06.218 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 291 in the jsp file: /getItems.jsp
+winnerRes cannot be resolved
+288:               e.printStackTrace();
+289:             } finally {
+290:               try {
+291:                 winnerRes.close();
+292:                 bidHistoryRes.close();
+293:                 res.close();
+294:                 conn.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 291 in the jsp file: /getItems.jsp
+winnerRes cannot be resolved
+288:               e.printStackTrace();
+289:             } finally {
+290:               try {
+291:                 winnerRes.close();
+292:                 bidHistoryRes.close();
+293:                 res.close();
+294:                 conn.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

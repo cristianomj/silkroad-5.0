@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Select Student or Professor -- Student Registration System</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function Button1_onclick() {
+if(document.form1.Radio1.checked)
+   window.open("StudentRegistration.htm","_self");
+else
+   window.open("ProfessorRegistration.htm","_self");
+
+}
+
+// ]]>
+</script>
+</head>
+<body style="text-align: center" bgcolor="#ffff00">
+    <span><strong><span style="font-size: 14pt; font-family: Arial">Student Registration
+        System</span><br />
+        <span style="font-size: 10pt; font-family: Arial">
+            <br />
+            First, &nbsp;please select whether
+            you are a Student or Faculty &nbsp;&nbsp; &nbsp;&nbsp;
+        </span></strong></span>
+    <form name = "form1">
+    <input id="Radio1" name="group1" checked="checked" type="radio" /><strong><span style="font-size: 10pt;
+        font-family: Arial">STUDENT  &nbsp; &nbsp;<input id="Radio2" name="group1" type="radio" />FACULTY
+        &nbsp;
+        &nbsp; &nbsp;&nbsp;
+        
+        <input id="Button1" style="width: 60px" onclick="Button1_onclick()" type="button" value="Next-->" />
+        &nbsp;
+        <input id="Button2" style="width: 60px" onclick="javascript:history.back()" type="button" value="Cancel" /></span></strong>
+  		  </form> 		  
+    <img src="ComputerScience.JPG" /><br />
+    <br />
+    <span style="font-size: 9pt">
+    <strong><span style="font-family: Arial">Shang Yang, 10/19/2006, Demo
+        Version<br />
+        Department of Computer Science, State University of New York at Stony Brook</span></strong>
+    </span>
+
+</body>
+</html>

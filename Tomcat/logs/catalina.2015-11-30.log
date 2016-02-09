@@ -1,0 +1,43 @@
+30-Nov-2015 13:05:53.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.28
+30-Nov-2015 13:05:53.031 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 7 2015 18:25:21 UTC
+30-Nov-2015 13:05:53.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.28.0
+30-Nov-2015 13:05:53.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+30-Nov-2015 13:05:53.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Nov-2015 13:05:53.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+30-Nov-2015 13:05:53.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_66
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_66-b18
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Files\Projects\SilkRoad-5.0\Tomcat
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Files\Projects\SilkRoad-5.0\Tomcat
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Files\Projects\SilkRoad-5.0\Tomcat\conf\logging.properties
+30-Nov-2015 13:05:53.033 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Nov-2015 13:05:53.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=D:\Files\Projects\SilkRoad-5.0\Tomcat\endorsed
+30-Nov-2015 13:05:53.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Files\Projects\SilkRoad-5.0\Tomcat
+30-Nov-2015 13:05:53.034 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Files\Projects\SilkRoad-5.0\Tomcat
+30-Nov-2015 13:05:53.035 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Files\Projects\SilkRoad-5.0\Tomcat\temp
+30-Nov-2015 13:05:53.035 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files (x86)\Java\jre1.8.0_66\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Languages\Python3_4\;C:\Languages\Python3_4\Scripts;C:\Languages\Python27\;C:\Languages\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\SMLNJ\bin\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\PharosSystems\Core;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5 & MySQL Utilities 1.5\Doctrine extensions for PHP\;C:\Users\sonor\AppData\Local\atom\bin;.
+30-Nov-2015 13:05:53.189 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Nov-2015 13:05:53.231 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2015 13:05:53.233 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2015 13:05:53.235 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+30-Nov-2015 13:05:53.235 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 483 ms
+30-Nov-2015 13:05:53.255 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+30-Nov-2015 13:05:53.255 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.28
+30-Nov-2015 13:05:53.274 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\CSE305.war
+30-Nov-2015 13:05:53.560 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2015 13:05:53.636 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\CSE305.war has finished in 362 ms
+30-Nov-2015 13:05:53.638 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\CSE305_Sample
+30-Nov-2015 13:05:53.767 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2015 13:05:53.770 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\CSE305_Sample has finished in 132 ms
+30-Nov-2015 13:05:53.770 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\host-manager
+30-Nov-2015 13:05:53.797 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\host-manager has finished in 27 ms
+30-Nov-2015 13:05:53.797 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\manager
+30-Nov-2015 13:05:53.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\manager has finished in 27 ms
+30-Nov-2015 13:05:53.824 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\ROOT
+30-Nov-2015 13:05:53.842 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\ROOT has finished in 18 ms
+30-Nov-2015 13:05:53.842 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\SilkRoad
+30-Nov-2015 13:05:53.985 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Nov-2015 13:05:53.988 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory D:\Files\Projects\SilkRoad-5.0\Tomcat\webapps\SilkRoad has finished in 146 ms
+30-Nov-2015 13:05:53.990 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Nov-2015 13:05:53.997 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+30-Nov-2015 13:05:53.998 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 762 ms

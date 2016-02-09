@@ -1,0 +1,738 @@
+03-Dec-2015 17:11:34.066 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 49 in the jsp file: /getItems.jsp
+isCustomerRes cannot be resolved
+46:     			userTypeRes = cs.getResultSet();
+47:           // TODO. Error handling
+48:           while (userTypeRes.next()) {
+49:             isCustomer = isCustomerRes.getString("Type").equalsIgnoreCase("Customer");
+50:           }
+51: 
+52:     			//Register JDBC driver
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 49 in the jsp file: /getItems.jsp
+isCustomerRes cannot be resolved
+46:     			userTypeRes = cs.getResultSet();
+47:           // TODO. Error handling
+48:           while (userTypeRes.next()) {
+49:             isCustomer = isCustomerRes.getString("Type").equalsIgnoreCase("Customer");
+50:           }
+51: 
+52:     			//Register JDBC driver
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:23:34.582 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [java.lang.NumberFormatException: empty String] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:23:47.391 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [java.lang.NumberFormatException: empty String] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:24:23.631 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [java.lang.NumberFormatException: empty String] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:25:13.720 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [java.lang.NumberFormatException: empty String] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:134)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:29:04.293 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 53 in the jsp file: /postAuction.jsp
+The local variable reserve may not have been initialized
+50:       cs.setDouble(4, duration);
+51:       cs.setDouble(5, increment);
+52:       cs.setDouble(6, openingBid);
+53:       cs.setDouble(7, reserve);
+54: 			cs.execute();
+55: 
+56:       res = cs.getResultSet();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 53 in the jsp file: /postAuction.jsp
+The local variable reserve may not have been initialized
+50:       cs.setDouble(4, duration);
+51:       cs.setDouble(5, increment);
+52:       cs.setDouble(6, openingBid);
+53:       cs.setDouble(7, reserve);
+54: 			cs.execute();
+55: 
+56:       res = cs.getResultSet();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:29:17.329 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 21 in the jsp file: /postAuction.jsp
+Type mismatch: cannot convert from null to double
+18:   double increment = Double.parseDouble(request.getParameter("increment"));
+19:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+20:   String reserveStr = request.getParameter("reserve");
+21:   double reserve = null;
+22:   if (reserveStr != null && !reserveStr.isEmpty()) {
+23:     reserve = Double.parseDouble(reserveStr);
+24:   }
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 21 in the jsp file: /postAuction.jsp
+Type mismatch: cannot convert from null to double
+18:   double increment = Double.parseDouble(request.getParameter("increment"));
+19:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+20:   String reserveStr = request.getParameter("reserve");
+21:   double reserve = null;
+22:   if (reserveStr != null && !reserveStr.isEmpty()) {
+23:     reserve = Double.parseDouble(reserveStr);
+24:   }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:30:37.573 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 54 in the jsp file: /postAuction.jsp
+The method setDouble(int, double) in the type PreparedStatement is not applicable for the arguments (int, null)
+51:       cs.setDouble(5, increment);
+52:       cs.setDouble(6, openingBid);
+53:       if (reserve == -1) {
+54:         cs.setDouble(7, null);
+55:       } else {
+56:         cs.setDouble(7, reserve);
+57:       }
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 54 in the jsp file: /postAuction.jsp
+The method setDouble(int, double) in the type PreparedStatement is not applicable for the arguments (int, null)
+51:       cs.setDouble(5, increment);
+52:       cs.setDouble(6, openingBid);
+53:       if (reserve == -1) {
+54:         cs.setDouble(7, null);
+55:       } else {
+56:         cs.setDouble(7, reserve);
+57:       }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:39:11.791 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double increment = Double.parseDouble(request.getParameter("increment"));
+19:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+20:   String reserveStr = request.getParameter("reserve");
+21:   double reserve = 0;
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:39:34.554 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double increment = Double.parseDouble(request.getParameter("increment"));
+19:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+20:   String reserveStr = request.getParameter("reserve");
+21:   double reserve = 0;
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:44:44.586 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+19:   String reserveStr = request.getParameter("reserve");
+20:   double reserve = 0;
+21:   if (reserveStr != null && !reserveStr.isEmpty()) {
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:45:07.504 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+19:   String reserveStr = request.getParameter("reserve");
+20:   double reserve = 0;
+21:   if (reserveStr != null && !reserveStr.isEmpty()) {
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:47:35.782 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+19:   String reserveStr = request.getParameter("reserve");
+20:   double reserve = 0;
+21:   if (reserveStr != null && !reserveStr.isEmpty()) {
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:47:52.934 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+19:   String reserveStr = request.getParameter("reserve");
+20:   double reserve = 0;
+21:   if (reserveStr != null && !reserveStr.isEmpty()) {
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: empty String
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:48:05.710 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 26
+
+23:   }
+24: 
+25:   SimpleDateFormat dt1 = new SimpleDateFormat("MMMM dd, yyyy", java.util.Locale.US);
+26:   java.sql.Date openingTime = new java.sql.Date(dt1.parse(openingTimeStr).getTime());
+27: 
+28: 	String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+29: 	String DB_URL = "jdbc:mysql://localhost:3306/SilkRoad 5.0";
+
+
+Stacktrace:] with root cause
+ java.text.ParseException: Unparseable date: ""
+	at java.text.DateFormat.parse(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:140)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+03-Dec-2015 17:48:24.009 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [An exception occurred processing JSP page /postAuction.jsp at line 18
+
+15: 	String item = request.getParameter("item");
+16:   String openingTimeStr = request.getParameter("openingTime");
+17:   int duration = Integer.parseInt(request.getParameter("duration"));
+18:   double openingBid = Double.parseDouble(request.getParameter("openingBid"));
+19:   String reserveStr = request.getParameter("reserve");
+20:   double reserve = 0;
+21:   if (reserveStr != null && !reserveStr.isEmpty()) {
+
+
+Stacktrace:] with root cause
+ java.lang.NumberFormatException: For input string: "5tr"
+	at sun.misc.FloatingDecimal.readJavaFormatString(Unknown Source)
+	at sun.misc.FloatingDecimal.parseDouble(Unknown Source)
+	at java.lang.Double.parseDouble(Unknown Source)
+	at org.apache.jsp.postAuction_jsp._jspService(postAuction_jsp.java:132)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

@@ -1,0 +1,2698 @@
+15-Nov-2015 15:26:26.527 SEVERE [http-nio-8080-exec-12] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /addUser.jsp
+mysUserID cannot be resolved to a variable
+15: 					//Register JDBC driver
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17:     			java.util.Properties sysprops=System.getProperties();
+18:     			sysprops.put("user",mysUserID);
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+mysPassword cannot be resolved to a variable
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17:     			java.util.Properties sysprops=System.getProperties();
+18:     			sysprops.put("user",mysUserID);
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+22:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+
+
+An error occurred at line: 22 in the jsp file: /addUser.jsp
+DB_URL cannot be resolved to a variable
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+22:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+23:     			System.out.println("Connected successfully to database using JConnect");
+24: 
+25: 					// Create CallableStatement
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 18 in the jsp file: /addUser.jsp
+mysUserID cannot be resolved to a variable
+15: 					//Register JDBC driver
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17:     			java.util.Properties sysprops=System.getProperties();
+18:     			sysprops.put("user",mysUserID);
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+mysPassword cannot be resolved to a variable
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17:     			java.util.Properties sysprops=System.getProperties();
+18:     			sysprops.put("user",mysUserID);
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+22:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+
+
+An error occurred at line: 22 in the jsp file: /addUser.jsp
+DB_URL cannot be resolved to a variable
+19:     			sysprops.put("password",mysPassword);
+20: 
+21: 					// Open a connection
+22:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+23:     			System.out.println("Connected successfully to database using JConnect");
+24: 
+25: 					// Create CallableStatement
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 15:27:06.942 SEVERE [http-nio-8080-exec-16] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+DB_URL cannot be resolved to a variable
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17: 
+18: 					// Open a connection
+19:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+20:     			System.out.println("Connected successfully to database using JConnect");
+21: 
+22: 					// Create CallableStatement
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+DB_URL cannot be resolved to a variable
+16:           Class.forName(JDBC_DRIVER).newInstance();
+17: 
+18: 					// Open a connection
+19:     			conn = java.sql.DriverManager.getConnection(DB_URL, USER, PASS);
+20:     			System.out.println("Connected successfully to database using JConnect");
+21: 
+22: 					// Create CallableStatement
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 15:36:44.757 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-Nov-2015 15:36:44.757 INFO [localhost-startStop-3] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+15-Nov-2015 15:36:51.443 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Nov-2015 15:36:51.443 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-Nov-2015 16:12:45.120 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Nov-2015 16:12:45.120 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-Nov-2015 16:16:53.936 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Nov-2015 16:16:53.936 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-Nov-2015 16:17:19.719 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Nov-2015 16:17:19.719 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-Nov-2015 16:19:04.301 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+15-Nov-2015 16:19:04.301 INFO [localhost-startStop-2] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+15-Nov-2015 16:19:11.546 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+15-Nov-2015 16:19:11.546 INFO [localhost-startStop-1] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+15-Nov-2015 16:38:46.268 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Id cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Password1 cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Name cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 41 in the jsp file: /addUser.jsp
+password cannot be resolved to a variable
+38: 				else {
+39: 						String employeeLevel = request.getParameter("levelRadio");
+40: 						String hourlyWage = request.getParameter("hourlyWage");
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Id cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Password1 cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 34 in the jsp file: /addUser.jsp
+Name cannot be resolved to a variable
+31:   			java.sql.Statement stmt1 = conn.createStatement();
+32:         if (request.getParameter("target").trim().equals("customer")) {
+33: 						String ccn = request.getParameter("ccn");
+34: 						stmt1.executeUpdate("insert into Person values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+35: //							out.print("insert into Student values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("status")+"')");
+36: 						stmt1.close();
+37: 				}
+
+
+An error occurred at line: 41 in the jsp file: /addUser.jsp
+password cannot be resolved to a variable
+38: 				else {
+39: 						String employeeLevel = request.getParameter("levelRadio");
+40: 						String hourlyWage = request.getParameter("hourlyWage");
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+41: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+42: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+43: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+44: 																+ valueQuery + ";"
+45: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+46: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+47: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+48: 						stmt1.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:39:55.994 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 40 in the jsp file: /addUser.jsp
+password cannot be resolved to a variable
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						String hourlyWage = request.getParameter("hourlyWage");
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 40 in the jsp file: /addUser.jsp
+password cannot be resolved to a variable
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						String hourlyWage = request.getParameter("hourlyWage");
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + password + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:40:16.437 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + userPassword + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + userPassword + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ")" to complete MethodInvocation
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + userPassword + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 43 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete Statement
+40: 						String valueQuery = "values('Employee'" + "," + userName + "," + ssn + "," + userPassword + "," +
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";"
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);";
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:40:50.080 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+An error occurred at line: 44 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+41: 																firstName + "," + lastName + "," + address + "," + zipcode + "," + telephone + "," + email + ")";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:41:12.871 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+The method values(String, String, String) is undefined for the type addUser_jsp
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+The method values(String, String, String) is undefined for the type addUser_jsp
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+Syntax error on token "2015", ) expected
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:41:30.683 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+hourlyRate cannot be resolved to a variable
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																"values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+An error occurred at line: 45 in the jsp file: /addUser.jsp
+hourlyRate cannot be resolved to a variable
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+43: 																+ valueQuery + ";");
+44: 						stmt1.executeUpdate("insert into Employee(EmployeeID, HourlyRate, StartDate, Level)" +
+45: 																"values(" + ssn +"," + hourlyRate + "," + "2015-01-01, 0);");
+46: //							out.print("insert into Professor values('"+Id+"','"+Password1+"','"+Name+"','"+request.getParameter("DepID")+"')");;
+47: 						stmt1.close();
+48: 				}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:41:59.073 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = "TODO" // request.getParameter("password");
+8: 		String email = request.getParameter("email");
+9: 		String telephone = request.getParameter("telephone");
+10: 		String zipcode = request.getParameter("zipcode");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:46:43.714 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+36: 				}
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						int hourlyRate = request.getParameter("hourlyRate");
+40: 						String valueQuery = "values('Employee'" + ", '" + userName + "', '" + ssn + "', '" + userPassword + "','" +
+41: 																firstName + "','" + lastName + "', '" + address + "', '" + zipcode + "'," + telephone + ", '" + email + "');";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+36: 				}
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						int hourlyRate = request.getParameter("hourlyRate");
+40: 						String valueQuery = "values('Employee'" + ", '" + userName + "', '" + ssn + "', '" + userPassword + "','" +
+41: 																firstName + "','" + lastName + "', '" + address + "', '" + zipcode + "'," + telephone + ", '" + email + "');";
+42: 						stmt1.executeUpdate("insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)"
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:47:14.580 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+36: 				}
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						int hourlyRate = request.getParameter("hourlyRate");
+40: 						out.print(hourlyRate);
+41: 						String valueQuery = "values('Employee'" + ", '" + userName + "', '" + ssn + "', '" + userPassword + "','" +
+42: 																firstName + "','" + lastName + "', '" + address + "', '" + zipcode + "'," + telephone + ", '" + email + "');";
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 39 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+36: 				}
+37: 				else {
+38: 						String employeeLevel = request.getParameter("levelRadio");
+39: 						int hourlyRate = request.getParameter("hourlyRate");
+40: 						out.print(hourlyRate);
+41: 						String valueQuery = "values('Employee'" + ", '" + userName + "', '" + ssn + "', '" + userPassword + "','" +
+42: 																firstName + "','" + lastName + "', '" + address + "', '" + zipcode + "'," + telephone + ", '" + email + "');";
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:52:41.579 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						int hourlyRate = request.getParameter("hourlyRate");
+38: 						String sql="insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)
+39: 						 					values (?,?,?,?,?,?,?,?,?,?)";
+40: 						java.sql.PreparedStatement statement = conn.prepareStatement(sql);
+41: 						statement.setString(1,"Employee");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+String literal is not properly closed by a double-quote
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						int hourlyRate = request.getParameter("hourlyRate");
+38: 						String sql="insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)
+39: 						 					values (?,?,?,?,?,?,?,?,?,?)";
+40: 						java.sql.PreparedStatement statement = conn.prepareStatement(sql);
+41: 						statement.setString(1,"Employee");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:52:58.916 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 37 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+34: 				}
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						int hourlyRate = request.getParameter("hourlyRate");
+38: 						String sql="insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+39: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+40: 						java.sql.PreparedStatement statement = conn.prepareStatement(sql);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 37 in the jsp file: /addUser.jsp
+Type mismatch: cannot convert from String to int
+34: 				}
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						int hourlyRate = request.getParameter("hourlyRate");
+38: 						String sql="insert into Person(Type, UserName, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+39: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+40: 						java.sql.PreparedStatement statement = conn.prepareStatement(sql);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 16:54:07.868 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 55 in the jsp file: /addUser.jsp
+The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, String)
+52: 						sql = "insert into Employee(EmployeeID, HourlyRate, StartDate, Level)";
+53: 						statement = conn.prepareStatement(sql);
+54: 						statement.setString(1, ssn);
+55: 						statement.setInt(2, hourlyRate);
+56: 						statement.setString(3, "2015-01-01");
+57: 						statement.setInt(4, 0);
+58: 						statement.executeUpdate();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 55 in the jsp file: /addUser.jsp
+The method setInt(int, int) in the type PreparedStatement is not applicable for the arguments (int, String)
+52: 						sql = "insert into Employee(EmployeeID, HourlyRate, StartDate, Level)";
+53: 						statement = conn.prepareStatement(sql);
+54: 						statement.setString(1, ssn);
+55: 						statement.setInt(2, hourlyRate);
+56: 						statement.setString(3, "2015-01-01");
+57: 						statement.setInt(4, 0);
+58: 						statement.executeUpdate();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 17:02:22.832 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 64 in the jsp file: /addUser.jsp
+hourlyRate cannot be resolved to a variable
+61: 			} catch(Exception e) {
+62: 					e.printStackTrace();
+63: 					out.print(e.toString());
+64: 					out.print(hourlyRate);
+65: 			}
+66: 			finally{
+67: 				try {
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 64 in the jsp file: /addUser.jsp
+hourlyRate cannot be resolved to a variable
+61: 			} catch(Exception e) {
+62: 					e.printStackTrace();
+63: 					out.print(e.toString());
+64: 					out.print(hourlyRate);
+65: 			}
+66: 			finally{
+67: 				try {
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 17:03:20.116 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 57 in the jsp file: /addUser.jsp
+The method setBigDecimal(int, BigDecimal) in the type PreparedStatement is not applicable for the arguments (int, double)
+54: 									 "values(?,?,?,?)";
+55: 						statement = conn.prepareStatement(sql);
+56: 						statement.setString(1, ssn);
+57: 						statement.setBigDecimal(2, hourlyRate);
+58: 						statement.setString(3, "2015-01-01");
+59: 						statement.setInt(4, 0);
+60: 						statement.executeUpdate();
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 57 in the jsp file: /addUser.jsp
+The method setBigDecimal(int, BigDecimal) in the type PreparedStatement is not applicable for the arguments (int, double)
+54: 									 "values(?,?,?,?)";
+55: 						statement = conn.prepareStatement(sql);
+56: 						statement.setString(1, ssn);
+57: 						statement.setBigDecimal(2, hourlyRate);
+58: 						statement.setString(3, "2015-01-01");
+59: 						statement.setInt(4, 0);
+60: 						statement.executeUpdate();
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 17:04:10.532 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 17:04:50.905 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						java.math.BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 38 in the jsp file: /addUser.jsp
+BigDecimal cannot be resolved to a type
+35: 				else {
+36: 						String employeeLevel = request.getParameter("levelRadio");
+37: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+38: 						java.math.BigDecimal bigHourlyRate = new BigDecimal(hourlyRate);
+39: 						out.print(hourlyRate);
+40: 						String sql="insert into Person(Type, Username, SSN, Password, FirstName, LastName, Address, ZipCode, Telephone, Email)" +
+41: 						 					"values (?,?,?,?,?,?,?,?,?,?)";
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 17:07:17.083 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP] with root cause
+ java.io.IOException: classFile.delete() failed
+	at org.apache.jasper.compiler.SmapUtil$SDEInstaller.install(SmapUtil.java:202)
+	at org.apache.jasper.compiler.SmapUtil.installSmap(SmapUtil.java:163)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:465)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:19:54.624 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error on token "request", delete this token
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city")
+8: 										 + "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+The method getParameter(String) is undefined for the type String
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city")
+8: 										 + "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error on token "request", delete this token
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city")
+8: 										 + "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+The method getParameter(String) is undefined for the type String
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city")
+8: 										 + "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:20:07.140 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error on token "request", delete this token
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city") +
+8: 										 "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+The method getParameter(String) is undefined for the type String
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city") +
+8: 										 "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+Syntax error on token "request", delete this token
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city") +
+8: 										 "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 7 in the jsp file: /addUser.jsp
+The method getParameter(String) is undefined for the type String
+4: 		String firstName = request.getParameter("firstName");
+5: 		String lastName = request.getParameter("lastName");
+6: 		String userPassword = request.getParameter("password");
+7: 		String address = request.getParameter("street") + "," request.getParameter("city") +
+8: 										 "," + request.getParameter("state");
+9: 		String email = request.getParameter("email");
+10: 		String telephone = request.getParameter("telephone");
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:20:23.898 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 19 in the jsp file: /addUser.jsp
+Syntax error on tokens, delete these tokens
+16: 		String PASS = "pplppl112";
+17: 
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 		// code start here
+19: 		import java.sql.*;
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:22:12.803 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /addUser.jsp
+Syntax error on tokens, Expression expected instead
+1: <%
+2: 		@ page import="java.sql.*";
+3: 		String username = request.getParameter("username");
+4: 		String ssn = request.getParameter("ssn");
+5: 		String firstName = request.getParameter("firstName");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /addUser.jsp
+Syntax error on tokens, Expression expected instead
+1: <%
+2: 		@ page import="java.sql.*";
+3: 		String username = request.getParameter("username");
+4: 		String ssn = request.getParameter("ssn");
+5: 		String firstName = request.getParameter("firstName");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:22:38.755 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+1: <%
+2: 		page import="java.sql.*";
+3: 		String username = request.getParameter("username");
+4: 		String ssn = request.getParameter("ssn");
+5: 		String firstName = request.getParameter("firstName");
+
+
+An error occurred at line: 20 in the jsp file: /addUser.jsp
+Connection cannot be resolved to a type
+17: 		String PASS = "pplppl112";
+18: 
+19: 		// Code starts here
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 
+19: 		// Code starts here
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 2 in the jsp file: /addUser.jsp
+Syntax error on token "import", delete this token
+1: <%
+2: 		page import="java.sql.*";
+3: 		String username = request.getParameter("username");
+4: 		String ssn = request.getParameter("ssn");
+5: 		String firstName = request.getParameter("firstName");
+
+
+An error occurred at line: 20 in the jsp file: /addUser.jsp
+Connection cannot be resolved to a type
+17: 		String PASS = "pplppl112";
+18: 
+19: 		// Code starts here
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+
+
+An error occurred at line: 21 in the jsp file: /addUser.jsp
+CallableStatement cannot be resolved to a type
+18: 
+19: 		// Code starts here
+20: 		Connection conn = null;
+21: 		CallableStatement cs = null;
+22: 		try	{
+23: 				//Register JDBC driver
+24:         Class.forName(JDBC_DRIVER).newInstance();
+
+
+An error occurred at line: 49 in the jsp file: /addUser.jsp
+ResultSet cannot be resolved to a type
+46: 						cs.setDouble(10, hourlyRate);
+47: 						cs.setInt(11, level);
+48: 
+49:             ResultSet res = cs.getResultSet();
+50: 						while(res.next()){
+51:                 // Retrieve by column name
+52:                 int status = res.getInt(1);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:23:36.477 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [/addUser.jsp (line: 1, column: 2) Unterminated &lt;%@ page tag] with root cause
+ org.apache.jasper.JasperException: /addUser.jsp (line: 1, column: 2) Unterminated &lt;%@ page tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:41)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:275)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:91)
+	at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:502)
+	at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1782)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:136)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:227)
+	at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:117)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:194)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:31:03.891 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 36 in the jsp file: /addUser.jsp
+The type of the expression must be an array type but it resolved to String
+33: 				else { // add an employee
+34: 					  cs = conn.prepareCall("call AddEmployee(?,?,?,?,?,?,?,?,?,?,?)");
+35: 
+36: 						int level = request.getParameter("levelRadio")[0].checked ? 1 : 0;
+37: 						out.println(request.getParameter("levelRadio"));
+38: 						out.println(level);
+39: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 36 in the jsp file: /addUser.jsp
+The type of the expression must be an array type but it resolved to String
+33: 				else { // add an employee
+34: 					  cs = conn.prepareCall("call AddEmployee(?,?,?,?,?,?,?,?,?,?,?)");
+35: 
+36: 						int level = request.getParameter("levelRadio")[0].checked ? 1 : 0;
+37: 						out.println(request.getParameter("levelRadio"));
+38: 						out.println(level);
+39: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:34:00.147 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 37 in the jsp file: /addUser.jsp
+The field String.value is not visible
+34: 					  cs = conn.prepareCall("call AddEmployee(?,?,?,?,?,?,?,?,?,?,?)");
+35: 
+36: 						int level = request.getParameter("levelRadio").equals("Manager") ? 1 : 0;
+37: 						out.println(request.getParameter("levelRadio").value + "		");
+38: 						out.println(level);
+39: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+40: 						cs.setString(1, ssn);
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 37 in the jsp file: /addUser.jsp
+The field String.value is not visible
+34: 					  cs = conn.prepareCall("call AddEmployee(?,?,?,?,?,?,?,?,?,?,?)");
+35: 
+36: 						int level = request.getParameter("levelRadio").equals("Manager") ? 1 : 0;
+37: 						out.println(request.getParameter("levelRadio").value + "		");
+38: 						out.println(level);
+39: 						double hourlyRate = Double.parseDouble(request.getParameter("hourlyRate"));
+40: 						cs.setString(1, ssn);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+15-Nov-2015 23:45:18.045 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 58 in the jsp file: /addUser.jsp
+outputMsg cannot be resolved to a variable
+55: 
+56:                 // Display values. If status != 0 there was an error
+57:                 if (status != 0) {
+58:                     outputMsg = returnMsg;
+59:                 }
+60:             }
+61: 						res.close();
+
+
+An error occurred at line: 109 in the jsp file: /addUser.jsp
+outputMsg cannot be resolved to a variable
+106:       <div class="container">
+107:         <div class = "jumbotron transparentJumbo">
+108:           <h1>Silk Road 5.0</h1>
+109:           <p><%= outputMsg %></p>
+110:         </div>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 58 in the jsp file: /addUser.jsp
+outputMsg cannot be resolved to a variable
+55: 
+56:                 // Display values. If status != 0 there was an error
+57:                 if (status != 0) {
+58:                     outputMsg = returnMsg;
+59:                 }
+60:             }
+61: 						res.close();
+
+
+An error occurred at line: 109 in the jsp file: /addUser.jsp
+outputMsg cannot be resolved to a variable
+106:       <div class="container">
+107:         <div class = "jumbotron transparentJumbo">
+108:           <h1>Silk Road 5.0</h1>
+109:           <p><%= outputMsg %></p>
+110:         </div>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Registration for Faculty  -- Student Registration System</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function Button1_onclick() {
+//if(document.myForm.username.value == "")
+//    alert("UserName Can Not Be Null!")
+document.myForm.submit()
+}
+
+function Button2_onclick() {
+    window.open("RegisterPage.htm","_self");
+
+}
+
+// ]]>
+</script>
+
+</head>
+<body style="text-align: center" bgcolor="#ffff00">
+
+  <span><strong><span style="font-size: 14pt; font-family: Arial">
+    <table border="0" cellpadding="0" cellspacing="0" style="font-size: 14pt; width: 100%;
+        height: 100%" id="TABLE1" onclick="return TABLE1_onclick()">
+        <tr>
+            <td colspan="2" style="height: 63px; text-align: center; background-color: yellow;">
+                Faculty Registration</td>
+        </tr>
+        <tr>
+        	<form name="myForm" action="useradd.jsp" method="post">
+        		<input type="hidden" name="target" value="professor">
+            <td style="width: 220px; height: 426px; background-color: yellow; vertical-align: top; text-align: left;">
+                <span style="font-size: 10pt"><strong>Your ID: &nbsp; &nbsp;<br />
+                </strong></span><input name="Id" style="font-weight: bold; font-size: 10pt; width: 145px; left: 1px; position: relative; top: 0px;" type="text" /><span
+                    style="font-size: 10pt"><strong>
+                        <br />
+                        PassWord:&nbsp;<br />
+                    </strong></span><input
+                            name="Password1" style="font-weight: bold; font-size: 10pt; width: 145px; left: 0px; position: relative; top: 0px;" type="password" /><br />
+                <span style="font-size: 10pt"></span><span style="font-size: 10pt"><strong>ReEnterPassWord:<br />
+                </strong></span><input id="Password2" style="font-weight: bold; font-size: 10pt;
+                        width: 145px" type="password" /><br />
+                <span style="font-size: 10pt"><strong>Your Name:<br />
+                    <input id="Text2" name="Name" style="font-weight: bold; font-size: 10pt; width: 145px"
+                        type="text" /><br />
+                    Your Department CODE:<br />
+                    <input id="Text3" name="DepID" style="width: 145px" type="text" /><br />
+                    Your Address: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                    <br />
+                    <textarea id="TextArea1" style="width: 200px; height: 96px"></textarea><br />
+                    <br />
+                    <input id="Button2" type="button" value="Finish"  onclick="return Button1_onclick()" />
+                    &nbsp;
+                    <input id="Button3" type="button" value="Cancel"  onclick="window.open('index.htm','_self');" /><br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <span style="font-size: 8pt; font-family: Arial">
+                        <br />
+                        Shang Yang, 10/19/2006, Demo Version<br />
+                        Department of Computer Science,<br />
+                        SUNY at Stony Brook</span>
+                </strong></span>
+            </td>
+            <td style="vertical-align: top; background-color: yellow; text-align: justify; width: 355px; height: 426px;">
+                <img src="WangCenter.JPG" /></td>
+					</form>          
+        </tr>
+        <tr>
+            <td style="width: 220px; background-color: yellow;">
+            </td>
+            <td style="vertical-align: top; background-color: yellow; text-align: justify; width: 355px;">
+            </td>
+        </tr>
+    </table>
+</span></strong>
+
+</body>
+</html>

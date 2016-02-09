@@ -1,0 +1,513 @@
+28-Nov-2015 15:06:26.972 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 193 in the jsp file: /CustomerSearch.jsp
+Type mismatch: cannot convert from String to boolean
+190: 											<%= year %>
+191: 										</td>
+192: 										<td>
+193: 											<% String description = "null".equals(itemSuggestionRes.getString("Description") ? "No description" : itemSuggestionRes.getString("Description"); %>
+194: 											<%= description %>
+195: 										</td>
+196: 										<td>
+
+
+An error occurred at line: 193 in the jsp file: /CustomerSearch.jsp
+Syntax error, insert ")" to complete Expression
+190: 											<%= year %>
+191: 										</td>
+192: 										<td>
+193: 											<% String description = "null".equals(itemSuggestionRes.getString("Description") ? "No description" : itemSuggestionRes.getString("Description"); %>
+194: 											<%= description %>
+195: 										</td>
+196: 										<td>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 193 in the jsp file: /CustomerSearch.jsp
+Type mismatch: cannot convert from String to boolean
+190: 											<%= year %>
+191: 										</td>
+192: 										<td>
+193: 											<% String description = "null".equals(itemSuggestionRes.getString("Description") ? "No description" : itemSuggestionRes.getString("Description"); %>
+194: 											<%= description %>
+195: 										</td>
+196: 										<td>
+
+
+An error occurred at line: 193 in the jsp file: /CustomerSearch.jsp
+Syntax error, insert ")" to complete Expression
+190: 											<%= year %>
+191: 										</td>
+192: 										<td>
+193: 											<% String description = "null".equals(itemSuggestionRes.getString("Description") ? "No description" : itemSuggestionRes.getString("Description"); %>
+194: 											<%= description %>
+195: 										</td>
+196: 										<td>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+28-Nov-2015 15:08:36.650 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 165 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved to a variable
+162: 		cs.execute();
+163: 		// TODO. Error handling
+164: 		cs.getMoreResults();
+165: 		itemSuggestionRes = cs.getResultSet();
+166: 	%>
+167: 	<div id="itemSuggestionsModal" class="modal fade">
+168: 		<div class="modal-dialog">
+
+
+An error occurred at line: 183 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+180: 									</tr>
+181: 								</thead>
+182: 								<tbody>
+183: 									<% while(itemSuggestionRes.next()) { %>
+184: 									<tr>
+185: 										<td>
+186: 											<%= itemSuggestionRes.getString("Name")%>
+
+
+An error occurred at line: 186 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+183: 									<% while(itemSuggestionRes.next()) { %>
+184: 									<tr>
+185: 										<td>
+186: 											<%= itemSuggestionRes.getString("Name")%>
+187: 										</td>
+188: 										<td>
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+
+
+An error occurred at line: 189 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= itemSuggestionRes.getString("Name")%>
+187: 										</td>
+188: 										<td>
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+190: 										</td>
+191: 										<td>
+192: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+
+
+An error occurred at line: 192 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+190: 										</td>
+191: 										<td>
+192: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+
+
+An error occurred at line: 196 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+196: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+
+
+An error occurred at line: 196 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+196: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+
+
+An error occurred at line: 200 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+200: 											<%= itemSuggestionRes.getInt("NumCopies") %>
+201: 										</td>
+202: 									</tr>
+203: 									<% } %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 165 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved to a variable
+162: 		cs.execute();
+163: 		// TODO. Error handling
+164: 		cs.getMoreResults();
+165: 		itemSuggestionRes = cs.getResultSet();
+166: 	%>
+167: 	<div id="itemSuggestionsModal" class="modal fade">
+168: 		<div class="modal-dialog">
+
+
+An error occurred at line: 183 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+180: 									</tr>
+181: 								</thead>
+182: 								<tbody>
+183: 									<% while(itemSuggestionRes.next()) { %>
+184: 									<tr>
+185: 										<td>
+186: 											<%= itemSuggestionRes.getString("Name")%>
+
+
+An error occurred at line: 186 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+183: 									<% while(itemSuggestionRes.next()) { %>
+184: 									<tr>
+185: 										<td>
+186: 											<%= itemSuggestionRes.getString("Name")%>
+187: 										</td>
+188: 										<td>
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+
+
+An error occurred at line: 189 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= itemSuggestionRes.getString("Name")%>
+187: 										</td>
+188: 										<td>
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+190: 										</td>
+191: 										<td>
+192: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+
+
+An error occurred at line: 192 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+189: 											<%= itemSuggestionRes.getString("ItemType") %>
+190: 										</td>
+191: 										<td>
+192: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+
+
+An error occurred at line: 196 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+196: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+
+
+An error occurred at line: 196 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+193: 											<%= year %>
+194: 										</td>
+195: 										<td>
+196: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+
+
+An error occurred at line: 200 in the jsp file: /PostAuctionPage.jsp
+itemSuggestionRes cannot be resolved
+197: 											<%= description %>
+198: 										</td>
+199: 										<td>
+200: 											<%= itemSuggestionRes.getInt("NumCopies") %>
+201: 										</td>
+202: 									</tr>
+203: 									<% } %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+28-Nov-2015 15:09:41.770 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/SilkRoad] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 158 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved to a variable
+155: 		cs.execute();
+156: 		// TODO. Error handling
+157: 		cs.getMoreResults();
+158: 		itemSuggestionRes = cs.getResultSet();
+159: 	%>
+160: 	<div id="itemSuggestionsModal" class="modal fade">
+161: 		<div class="modal-dialog">
+
+
+An error occurred at line: 176 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+173: 									</tr>
+174: 								</thead>
+175: 								<tbody>
+176: 									<% while(itemSuggestionRes.next()) { %>
+177: 									<tr>
+178: 										<td>
+179: 											<%= itemSuggestionRes.getString("Name")%>
+
+
+An error occurred at line: 179 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+176: 									<% while(itemSuggestionRes.next()) { %>
+177: 									<tr>
+178: 										<td>
+179: 											<%= itemSuggestionRes.getString("Name")%>
+180: 										</td>
+181: 										<td>
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+
+
+An error occurred at line: 182 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+179: 											<%= itemSuggestionRes.getString("Name")%>
+180: 										</td>
+181: 										<td>
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+183: 										</td>
+184: 										<td>
+185: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+
+
+An error occurred at line: 185 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+183: 										</td>
+184: 										<td>
+185: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+
+
+An error occurred at line: 189 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+189: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+
+
+An error occurred at line: 189 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+189: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+
+
+An error occurred at line: 193 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+193: 											<%= itemSuggestionRes.getInt("NumCopies") %>
+194: 										</td>
+195: 									</tr>
+196: 									<% } %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 158 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved to a variable
+155: 		cs.execute();
+156: 		// TODO. Error handling
+157: 		cs.getMoreResults();
+158: 		itemSuggestionRes = cs.getResultSet();
+159: 	%>
+160: 	<div id="itemSuggestionsModal" class="modal fade">
+161: 		<div class="modal-dialog">
+
+
+An error occurred at line: 176 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+173: 									</tr>
+174: 								</thead>
+175: 								<tbody>
+176: 									<% while(itemSuggestionRes.next()) { %>
+177: 									<tr>
+178: 										<td>
+179: 											<%= itemSuggestionRes.getString("Name")%>
+
+
+An error occurred at line: 179 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+176: 									<% while(itemSuggestionRes.next()) { %>
+177: 									<tr>
+178: 										<td>
+179: 											<%= itemSuggestionRes.getString("Name")%>
+180: 										</td>
+181: 										<td>
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+
+
+An error occurred at line: 182 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+179: 											<%= itemSuggestionRes.getString("Name")%>
+180: 										</td>
+181: 										<td>
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+183: 										</td>
+184: 										<td>
+185: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+
+
+An error occurred at line: 185 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+182: 											<%= itemSuggestionRes.getString("ItemType") %>
+183: 										</td>
+184: 										<td>
+185: 											<% String year = itemSuggestionRes.getString("Year").split("-")[0]; %>
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+
+
+An error occurred at line: 189 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+189: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+
+
+An error occurred at line: 189 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+186: 											<%= year %>
+187: 										</td>
+188: 										<td>
+189: 											<% String description = itemSuggestionRes.getString("Description") == null ? "No description" : itemSuggestionRes.getString("Description"); %>
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+
+
+An error occurred at line: 193 in the jsp file: /CustomerAuctions.jsp
+itemSuggestionRes cannot be resolved
+190: 											<%= description %>
+191: 										</td>
+192: 										<td>
+193: 											<%= itemSuggestionRes.getInt("NumCopies") %>
+194: 										</td>
+195: 									</tr>
+196: 									<% } %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:450)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:217)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:518)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1091)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:673)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+

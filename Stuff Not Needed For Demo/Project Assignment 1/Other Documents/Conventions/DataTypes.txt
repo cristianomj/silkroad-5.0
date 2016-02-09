@@ -1,0 +1,7 @@
+ZipCode = varchar(10) (to include the potential '-')
+Names (FirstName, LastName, etc.) = varchar(50)
+All primary keys (IDs) = int unsigned
+SSN = varchar(11) (to include the two '-')
+Email = varchar(255) (because it's a nice number)
+PhoneNumber = varchar(10) (no '-')
+Dates should be TIMESTAMP

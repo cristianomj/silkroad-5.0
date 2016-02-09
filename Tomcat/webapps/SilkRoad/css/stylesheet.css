@@ -1,0 +1,201 @@
+@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
+
+body {
+	font-family: 'Noticia Text', serif;
+}
+
+.homePageBody {
+    background-image: url('../images/indexBg.jpg');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.auctionHouseBody {
+    background-image: url('../images/auctionBg.jpg');
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.auctionHouseTable {
+	background:white;
+	color:black;
+}
+
+.auctionHouseTable th {
+	background-color: grey;
+	color:black;
+}
+
+.auctionTableHeader {
+	text-align:center;
+	color:black;
+	font-weight: bold;
+}
+
+.dataTables_length {
+   color:black;
+}
+
+.dataTables_filter {
+   color:black;
+}
+
+.transparentJumbo {
+  text-align:center;
+  background-color: transparent;
+  width:500px;
+  margin : auto;
+}
+
+.homePage {
+  width:375px;
+display:block;
+margin: auto;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.smallRadio {
+  font-size: 20px;
+}
+
+.regLabel{
+  font-size:20px;
+  color:white;
+  text-shadow: 2px 1px black;
+}
+
+.regControl{
+  font-size:20px;
+  color:black;
+}
+
+label.valid {
+	width: 21px;
+	height: 21px;
+	background: url("../images/valid.png");
+	display: inline-block;
+	text-indent: -9999px; /* move text off the screen */
+}
+
+label.error {
+	font-weight: bold;
+	color: red;
+	padding: 2px 8px;
+	margin-top: 2px;
+}
+
+.dataTables_filter {
+   width: 50%;
+   float: right;
+   text-align: right;
+}
+
+.dataTables_length {
+   float:left;
+   height:2.5em;
+   width:40%;
+}
+
+.myNavbar {
+	top:0;
+	position:absolute;
+	width: 100%;
+	background-color: black;
+  font-size: 150%;
+}
+
+.myNavbar li {
+    display:block;
+    width:20%;
+    text-align:center;
+}
+
+#menuDropdown {
+	padding-left:300px;
+}
+
+.floatLeft {
+	float:left;
+}
+
+.floatRight {
+	float:right;
+}
+
+.myNavbar li a{
+  display: inline-block;
+	color:green;
+}
+
+.open_nav {
+	color:black !important;
+	background-color:darkgreen;
+}
+
+.borderSidebar {
+	margin-left:20px;
+	 border: 2px solid #73AD21;
+	 padding: 20px;
+	 width: 15%;
+	 color:white;
+}
+
+.auctionTable {
+	border: 2px solid #73AD21;
+	margin-top: -537px;
+	margin-left: 340px;
+}
+
+.bidHistory {
+	text-align: center;
+}
+
+.bidHistoryTable {
+	border-style: groove;
+	border-color: black;
+}
+
+.bidHistoryTable thead tr  th{
+	background-color: green !important;
+}
+
+.bidHistoryTable thead tr th{
+	text-align: center;
+}
+
+.input-symbol-dollar {
+  position:relative;
+}
+
+.input-symbol-dollar span{
+  position: absolute;
+  transform: translate(0, -50%);
+  top:50%;
+  pointer-events:none;
+  margin-left:0.2em;
+}
+
+.input-symbol-dollar input{
+  text-indent:1em;
+}
+
+.myModal {
+	background-color:lightgreen;
+	color:white;
+}
+
+.postAuctionForm {
+	border: 2px solid #73AD21;
+	width:375px;
+	display:block;
+	margin: auto;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}

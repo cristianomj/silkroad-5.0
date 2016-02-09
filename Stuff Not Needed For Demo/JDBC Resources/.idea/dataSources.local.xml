@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - silkroad 5.0@localhost" uuid="1a4ae691-17e0-49e9-9f28-273b3d63e6cf">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>silkroad&amp;nbsp;5.0.*</schema-pattern>
+      <default-schemas>silkroad&amp;nbsp;5.0.*</default-schemas>
+    </data-source>
+  </component>
+</project>
